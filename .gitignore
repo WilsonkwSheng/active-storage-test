@@ -29,3 +29,11 @@
 /yarn-error.log
 yarn-debug.log*
 .yarn-integrity
+
+.rspec
+.DS_Store
+dump.rdb
+**/database.yml
+/config/database.yml
+.env.*
+/public/uploads
