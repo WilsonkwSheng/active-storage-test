@@ -1,0 +1,11 @@
+.container-fluid
+  %h1 My Page
+  %div  
+    %label Profile Picture
+    %div= image_tag(@user.profile_picture.variant(resize_to_limit: [150, 150]))
+    %div
+      %li= link_to "Click here to download", rails_blob_path(@user.profile_picture, disposition: "attachment")
+      %li= link_to "Click here to preview", rails_blob_path(@user.profile_picture, disposition: 'preview')
+  %div
+    %label Email
+    %div= @user.email

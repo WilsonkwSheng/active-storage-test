@@ -1,8 +1,0 @@
-<%= simple_form_for @user do |f| %>
-  <%= image_tag(@user.profile_picture.variant(resize_to_limit: [150, 150])) %>
-  <%= f.label :profile_picture %>
-  <%= f.file_field :profile_picture %>
-  <%= f.input :remove_profile, as: :boolean, input_html: { checked: false } %>
-  <%= f.input :email %>
-  <%= f.submit %>
-<% end %>

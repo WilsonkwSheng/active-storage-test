@@ -1,10 +1,8 @@
-%h1 All Users Page
-- @users.each do |user|
-  %div
+.container-fluid
+  %h1 All Users Page
+  - @users.each do |user|
     - if user.profile_picture.present?
-      = link_to(image_tag(user.profile_picture.variant(resize_to_limit: [150, 150])), rails_blob_path(user.profile_picture, disposition: "preview"))
+      %div= link_to(image_tag(user.profile_picture.variant(resize_to_limit: [150, 150])), rails_blob_path(user.profile_picture, disposition: "preview"))
     - else
-      = image_tag user.profile_picture
+      %div= image_tag user.profile_picture
     = link_to user.email, user_path(user)
-    - if current_user == user
-      = link_to "Edit Profile", edit_user_path(user)

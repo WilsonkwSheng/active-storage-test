@@ -16,8 +16,10 @@ gem 'devise'
 gem 'bootstrap', '~> 4.4.1'
 gem 'simple_form'
 gem 'haml-rails'
+gem 'aws-sdk-s3'
 
 group :development, :test do
+  gem 'dotenv-rails'
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'rspec-rails'
   gem 'faker'
