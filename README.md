@@ -7,8 +7,4 @@ Features implemented
 * Remove Images With Active Storage
 * Transforming/Resizing Images With Active Storage
 * Auto Remove Images/Attachments After Integration Test
-
-Others to consider
-* Upload To Heroku
-* Ability To Upload To AWS S3
-* Codeship
+* All Image Uploads To AWS S3
