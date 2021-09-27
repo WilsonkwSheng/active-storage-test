@@ -8,3 +8,4 @@ Features implemented
 * Transforming/Resizing Images With Active Storage
 * Auto Remove Images/Attachments After Integration Test
 * All Image Uploads To AWS S3
+
